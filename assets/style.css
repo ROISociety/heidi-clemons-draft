@@ -9,7 +9,7 @@
   --line: #e4ded2;
   --deep: #0b2f38;
   --deep-2: #12414c;
-  --accent: #2563eb;
+  --accent: #c9a36a;
   --accent-soft: #e9d9bd;
   --cta: #2563eb;
   --cta-hover: #1d4ed8;
@@ -115,7 +115,7 @@ section { padding: clamp(72px, 10vw, 140px) 0; }
 .hero { padding: clamp(48px, 7vw, 96px) 0 clamp(72px, 9vw, 130px); position: relative; overflow: hidden; }
 .hero::before {
   content: ''; position: absolute; width: 780px; height: 780px; right: -240px; top: -260px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(37,99,235,.28), transparent 65%); pointer-events: none;
+  background: radial-gradient(circle, rgba(201,163,106,.28), transparent 65%); pointer-events: none;
 }
 .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center; position: relative; }
 .hero h1 { margin-bottom: 28px; }
@@ -132,7 +132,7 @@ section { padding: clamp(72px, 10vw, 140px) 0; }
 .road-card .tag { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
 .road-card h3 { margin: 10px 0 28px; font-size: 28px; color: #fff; }
 .road { position: relative; display: grid; gap: 22px; padding-left: 34px; }
-.road::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(var(--accent), rgba(37,99,235,.15)); }
+.road::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(var(--accent), rgba(201,163,106,.15)); }
 .stop { position: relative; }
 .stop::before { content: ''; position: absolute; left: -34px; top: 5px; width: 15px; height: 15px; border-radius: 50%; background: var(--deep); border: 2px solid var(--accent); }
 .stop b { display: block; font-weight: 500; font-size: 17px; }
@@ -172,7 +172,7 @@ a.card:hover { transform: translateY(-5px); box-shadow: 0 30px 50px -34px rgba(1
 }
 .icon svg { width: 24px; height: 24px; }
 .dark .card { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.12); }
-.dark .icon { background: rgba(37,99,235,.18); color: var(--accent); }
+.dark .icon { background: rgba(201,163,106,.18); color: var(--accent); }
 .card .link { margin-top: auto; align-self: flex-start; }
 
 /* Split */
@@ -182,7 +182,7 @@ a.card:hover { transform: translateY(-5px); box-shadow: 0 30px 50px -34px rgba(1
   background: linear-gradient(160deg, var(--deep-2), var(--deep));
   display: grid; place-items: center; color: var(--accent);
 }
-.portrait::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, rgba(37,99,235,.35), transparent 55%); }
+.portrait::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, rgba(201,163,106,.35), transparent 55%); }
 .portrait .initials { font: 400 clamp(90px, 14vw, 180px)/1 var(--serif); font-style: italic; position: relative; }
 .portrait small { position: absolute; left: 24px; bottom: 22px; color: #a9c0c5; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
 .checks { list-style: none; padding: 0; margin: 28px 0 36px; display: grid; gap: 14px; }
@@ -222,7 +222,7 @@ a.card:hover { transform: translateY(-5px); box-shadow: 0 30px 50px -34px rgba(1
 .page-hero { padding: clamp(56px, 8vw, 110px) 0 clamp(40px, 6vw, 80px); position: relative; overflow: hidden; }
 .page-hero::after {
   content: ''; position: absolute; width: 560px; height: 560px; right: -160px; top: -240px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(37,99,235,.25), transparent 65%);
+  background: radial-gradient(circle, rgba(201,163,106,.25), transparent 65%);
 }
 .page-hero h1 { font-size: clamp(42px, 6.2vw, 72px); max-width: 17ch; margin-bottom: 24px; }
 .page-hero .subhead { max-width: 40ch; margin-bottom: 34px; }
@@ -258,7 +258,7 @@ a.card:hover { transform: translateY(-5px); box-shadow: 0 30px 50px -34px rgba(1
 
 /* Bottom form */
 .connect { background: var(--deep); color: #fff; position: relative; overflow: hidden; }
-.connect::before { content: ''; position: absolute; width: 700px; height: 700px; left: -260px; bottom: -340px; border-radius: 50%; background: radial-gradient(circle, rgba(37,99,235,.22), transparent 65%); }
+.connect::before { content: ''; position: absolute; width: 700px; height: 700px; left: -260px; bottom: -340px; border-radius: 50%; background: radial-gradient(circle, rgba(201,163,106,.22), transparent 65%); }
 .connect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 100px); align-items: start; position: relative; }
 .connect h2 { color: #fff; margin-bottom: 22px; }
 .connect p { color: #b9ccd0; }
@@ -367,8 +367,3 @@ a.card:hover { transform: translateY(-5px); box-shadow: 0 30px 50px -34px rgba(1
 .headshot { aspect-ratio: 1/1; }
 .benefits { margin-top: 28px; }
 .headshot { height: auto; }
-
-/* Accent text is blue; lighter blue on dark surfaces for contrast */
-.dark, .connect, .road-card { --accent: #8db4ff; }
-.logo-mark { color: #8db4ff; }
-.hero::before, .page-hero::after { background: radial-gradient(circle, rgba(37,99,235,.14), transparent 65%); }
